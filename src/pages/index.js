@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 import Hero from '../components/hero'
 import AboutHome from '../components/aboutHome'
 import GoalsHome from '../components/goalsHome'
@@ -9,7 +9,7 @@ import GoalsHome from '../components/goalsHome'
 const IndexPage = ({ pageContext: { locale }, data }) => {
   return (
     <Layout path='/' locale={locale} data={data} titleFooter={data.footer.childFooterJson.title} subtitleFooter={data.footer.childFooterJson.subtitle}>
-      <SEO title='Vittinova' />
+      <Seo title='Vittinova' />
       <Hero
         title={data.hero.childHeroJson.title}
         subtitle={data.hero.childHeroJson.subtitle}
