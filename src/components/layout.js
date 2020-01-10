@@ -11,11 +11,10 @@ const {
 } = React.createContext()
 
 const Layout = ({ children, locale, data, titleFooter, subtitleFooter }) => { // accesss data"
-  console.log(data, 'fromlayout')
   return (
     <LocaleProvider value={locale}>
       <>
-        <Header data={data} />     
+        <Header data={data} />
         <div
           style={{
             margin: '0 auto',
@@ -25,7 +24,7 @@ const Layout = ({ children, locale, data, titleFooter, subtitleFooter }) => { //
           }}
         >
           <main>{children}</main>
-          <Footer data={data} />
+
         </div>
       </>
     </LocaleProvider>
