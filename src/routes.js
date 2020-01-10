@@ -22,5 +22,10 @@ module.exports = [
   {
     path: '/innovation',
     component: path.resolve('src/pages/innovation.js')
+  },
+  // TEAM
+  {
+    path: '/team',
+    component: path.resolve('src/pages/team.js')
   }
 ]

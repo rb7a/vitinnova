@@ -27,7 +27,7 @@ function footer ({ titleFooter, subtitleFooter }) {
         </div>
 
       </div>
-      <img className='img-footer' src={footerPhoto} alt=''/>
+      <img className='img-footer' src={footerPhoto} />
     </footer>
   )
 }

@@ -228,7 +228,7 @@ Applicazione in campo degli interventi colturali calibrati sulla base delle mapp
         }
 
       tr:nth-child(even) {
-       background-color: #dddddd;
+       background-color: #f7f7f7;
         }
         .innovation-graphic {
             display: block;
