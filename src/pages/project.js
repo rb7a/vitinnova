@@ -7,7 +7,7 @@ const Project = ({ pageContext: { locale }, data }) => {
   return (
     <Layout path='/' locale={locale} data={data} titleFooter={data.footer.childFooterJson.title} subtitleFooter={data.footer.childFooterJson.subtitle}>
       <Seo title='Il progetto' />
-      <section style={{ padding: '0 4%', marginBottom: '180px' }}>
+      <section className='container' style={{ padding: '0 4%', marginBottom: '180px' }}>
         <div style={{ textAlign: 'center', marginTop: '120px', marginBottom: '180px' }}>
           <h1>GLI OBBIETTIVI DI <span style={{ color: '#b00020' }}>PROGETTO</span></h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, doloribus.</p>

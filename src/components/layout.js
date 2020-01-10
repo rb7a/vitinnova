@@ -15,15 +15,9 @@ const Layout = ({ children, locale, data, titleFooter, subtitleFooter }) => { //
     <LocaleProvider value={locale}>
       <>
         <Header data={data} />
-        <div
-          style={{
-            margin: '0 auto',
-            maxWidth: 960,
-            paddingTop: 0
-          }}
-        >
-          <main>{children}</main>
-        </div>
+
+        <main>{children}</main>
+
         <Footer titleFooter={titleFooter} subtitleFooter={subtitleFooter} />
       </>
     </LocaleProvider>
