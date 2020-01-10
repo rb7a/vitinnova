@@ -9,7 +9,7 @@ function Hero ({ title, subtitle, cta }) {
       <p>
         {subtitle}
       </p>
-      {/* <LocalizedLink className='cta-hero' to='/il-progetto'>{cta}</LocalizedLink> */}
+      <LocalizedLink className='cta-hero' to='/il-progetto'>{cta}</LocalizedLink>
     </div>
   )
 }

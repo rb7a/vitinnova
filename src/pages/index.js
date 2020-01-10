@@ -34,6 +34,8 @@ const IndexPage = ({ pageContext: { locale }, data }) => {
         title5={data.goalsHome.childGoalsHomeJson.title5}
         subtitle5={data.goalsHome.childGoalsHomeJson.subtitle5}
       />
+
+      <iframe className='shadow' style={{ marginTop: '120px' }} width='100%' height='500px' src='https://www.youtube.com/embed/zTJ3TuRWhLA' frameBorder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowFullScreen />
     </Layout>
   )
 }

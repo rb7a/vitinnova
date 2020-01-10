@@ -7,12 +7,18 @@
 .about-home img {
   width: 100%;
 }
+.about-home h2,
+.about-home p {
+  padding: 0 4%;
+}
+
 .about-home-cta {
   color: #222;
   font-weight: 500;
   text-decoration: none;
   margin-top: 20px;
   display: inline-block;
+  padding: 0 4%;
 }
 .about-home-cta:hover {
   color: #b00020;

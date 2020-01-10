@@ -57,12 +57,10 @@ const goalsHome = ({ titleSection, subtitleSection, title1, subtitle1, title2, s
         margin-bottom: 40px;
         text-align: center
       }
-   
-      .thistle-container span {
-        color: #79a43d;
-        text-align: center
+      #why-section{
+        margin: 0 auto
       }
-    
+   
       .why-box {
         padding-top: 20px;
       }
@@ -93,9 +91,7 @@ const goalsHome = ({ titleSection, subtitleSection, title1, subtitle1, title2, s
           grid-column-gap: 0px;
           grid-row-gap: 0px;
         }
-        .why-box {
-          padding-top: 20px;
-        }
+
         .why-box p {
           width: 140%;
           margin: 0 auto;

@@ -42,9 +42,9 @@ class Header extends React.Component {
               <li>
                 <LocalizedLink to="/">Home</LocalizedLink>
               </li>
-              {/* <li>
+              <li>
                 <LocalizedLink to="/il-progetto">Il progetto</LocalizedLink>
-              </li> */}
+              </li>
               <li>
                 <LocalizedLink to="/innovazione">Innovazione</LocalizedLink>
               </li>
@@ -68,9 +68,9 @@ class Header extends React.Component {
             <li>
               <LocalizedLink to="/">Home</LocalizedLink>
             </li>
-            {/* <li>
+            <li>
               <LocalizedLink to="/il-progetto">Il progetto</LocalizedLink>
-            </li> */}
+            </li>
             <li>
               <LocalizedLink to="/innovazione">Innovazione</LocalizedLink>
             </li>
@@ -84,9 +84,7 @@ class Header extends React.Component {
               <LocalizedLink to="/contatti">Contatti</LocalizedLink>
             </li>
           </ul>
-          
           <a href="https://www.facebook.com/vitinnovavitinnova/" target='_blank'><img src={fbIcon} style={{position: 'relative', top: '5px'}}/></a>
-         
         </nav>
       </header>
     )
