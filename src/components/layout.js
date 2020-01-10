@@ -25,7 +25,7 @@ const Layout = ({ children, locale, data, titleFooter, subtitleFooter }) => { //
           }}
         >
           <main>{children}</main>
-          {/* <Footer titleFooter={ data.footer.childFooterJson.title } subtitleFooter={ data.footer.childFooterJson.subtitle } /> */}
+          <Footer data={data} />
         </div>
       </>
     </LocaleProvider>
