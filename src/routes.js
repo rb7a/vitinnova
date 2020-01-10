@@ -31,5 +31,15 @@ module.exports = [
   {
     path: '/team',
     component: path.resolve('src/pages/team.js')
+  },
+  // SOCIETA COOPERATIVA
+  // TEAM
+  {
+    path: '/societa-cooperativa-agricola',
+    component: path.resolve('src/pages/societaCooperativa.js')
+  },
+  {
+    path: '/societa-cooperativa-agricola',
+    component: path.resolve('src/pages/societaCooperativa.js')
   }
 ]

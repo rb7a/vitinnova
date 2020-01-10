@@ -51,10 +51,7 @@ class Header extends React.Component {
               <li>
                 <LocalizedLink to="/team">Team</LocalizedLink>
               </li>
-              <li>
-                <LocalizedLink to="/news">News</LocalizedLink>
-              </li>
-        
+             
             </ul>
           </nav>
         ) : (
@@ -75,9 +72,7 @@ class Header extends React.Component {
             <li>
               <LocalizedLink to="/team">Team</LocalizedLink>
             </li>
-            <li>
-              <LocalizedLink to="/news">News</LocalizedLink>
-            </li>
+          
            
           </ul>
           <a href="https://www.facebook.com/vitinnovavitinnova/" target='_blank'><img src={fbIcon} style={{position: 'relative', top: '5px'}} alt=''/></a>

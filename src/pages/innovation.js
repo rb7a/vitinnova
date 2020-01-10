@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Seo from '../components/seo'
 import Layout from '../components/layout'
 import innovationDesign from '../images/vitinnova-innovazione.png'
+import innovationDesignMobile from '../images/vitinnova-innovazione-mobile.png'
 
 const Innovation = ({ pageContext: { locale }, data }) => {
   return (
@@ -212,6 +213,7 @@ Applicazione in campo degli interventi colturali calibrati sulla base delle mapp
       <div>
 
         <img className='innovation-graphic' src={innovationDesign} alt='vittinova-innovazione' />
+        <img className='innovation-graphic-mobile' src={innovationDesignMobile} alt='vittinova-innovazione-mobile' />
       </div>
 
       <style jsx='true'>{`
@@ -233,7 +235,22 @@ Applicazione in campo degli interventi colturali calibrati sulla base delle mapp
         .innovation-graphic {
             display: block;
             margin: 0 auto;
-            width: 100%
+            width: 100%;
+            display: none
+        }
+        .innovation-graphic-mobile{
+          display: block;
+          margin: 0 auto
+        }
+        @media(min-width: 768px){
+          .innovation-graphic {
+            display: block;
+  
+        }
+        .innovation-graphic-mobile{
+          display: none;
+        
+        }
         }
           `}
       </style>
