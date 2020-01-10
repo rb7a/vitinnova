@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import LocalizedLink from './LocalizedLink'
+// import { Link } from 'gatsby'
+// import LocalizedLink from './LocalizedLink'
 import './footer.css'
 import footerPhoto from '../images/footer-istituzionale.jpg'
 import mailIcon from '../images/email-icon.png'
@@ -27,7 +27,7 @@ function footer ({ titleFooter, subtitleFooter }) {
         </div>
 
       </div>
-      <img className='img-footer' src={footerPhoto} />
+      <img className='img-footer' src={footerPhoto} alt=''/>
     </footer>
   )
 }

@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import LocalizedLink from "./LocalizedLink"
 import "./header.css"
 import fbIcon from '../images/facebook-icon.png'
@@ -20,7 +20,7 @@ class Header extends React.Component {
       <header>
         <section className="mobile-nav">
          
-            <a href="https://www.facebook.com/vitinnovavitinnova/" target='_blank'><img src={fbIcon} /></a>
+            <a href="https://www.facebook.com/vitinnovavitinnova/" target='_blank'><img src={fbIcon} alt=''/></a>
           
        
           {this.state.visible ? (
@@ -84,7 +84,7 @@ class Header extends React.Component {
               <LocalizedLink to="/contatti">Contatti</LocalizedLink>
             </li>
           </ul>
-          <a href="https://www.facebook.com/vitinnovavitinnova/" target='_blank'><img src={fbIcon} style={{position: 'relative', top: '5px'}}/></a>
+          <a href="https://www.facebook.com/vitinnovavitinnova/" target='_blank'><img src={fbIcon} style={{position: 'relative', top: '5px'}} alt=''/></a>
         </nav>
       </header>
     )
