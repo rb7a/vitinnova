@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { graphql } from 'gatsby'
 
 const NotFoundPage = ({ pageContext: { locale }, data }) => (
   <Layout path='/' locale={locale} data={data}>

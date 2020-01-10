@@ -1,9 +1,7 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../components/layout'
-import Image from '../components/image'
 import SEO from '../components/seo'
-import LocalizedLink from '../components/LocalizedLink'
 import Hero from '../components/Hero'
 import AboutHome from '../components/aboutHome'
 import GoalsHome from '../components/goalsHome'
@@ -11,7 +9,7 @@ import GoalsHome from '../components/goalsHome'
 const IndexPage = ({ pageContext: { locale }, data }) => {
   return (
     <Layout path='/' locale={locale} data={data} titleFooter={data.footer.childFooterJson.title} subtitleFooter={data.footer.childFooterJson.subtitle}>
-    <SEO title='Vittinova' />
+      <SEO title='Vittinova' />
       <Hero
         title={data.hero.childHeroJson.title}
         subtitle={data.hero.childHeroJson.subtitle}
@@ -35,7 +33,7 @@ const IndexPage = ({ pageContext: { locale }, data }) => {
         subtitle4={data.goalsHome.childGoalsHomeJson.subtitle4}
         title5={data.goalsHome.childGoalsHomeJson.title5}
         subtitle5={data.goalsHome.childGoalsHomeJson.subtitle5}
-      /> 
+      />
     </Layout>
   )
 }
