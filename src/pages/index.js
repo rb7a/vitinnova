@@ -11,7 +11,7 @@ import GoalsHome from '../components/goalsHome'
 const IndexPage = ({ pageContext: { locale }, data }) => {
   return (
     <Layout path='/' locale={locale} data={data} titleFooter={data.footer.childFooterJson.title} subtitleFooter={data.footer.childFooterJson.subtitle}> {/* site title gets from graphql query and pass it to layout component */}
-      <SEO title='Home' />
+      <SEO title='Vittinova' />
       <Hero
         title={data.hero.childHeroJson.title}
         subtitle={data.hero.childHeroJson.subtitle}
@@ -35,11 +35,11 @@ const IndexPage = ({ pageContext: { locale }, data }) => {
         subtitle4={data.goalsHome.childGoalsHomeJson.subtitle4}
         title5={data.goalsHome.childGoalsHomeJson.title5}
         subtitle5={data.goalsHome.childGoalsHomeJson.subtitle5}
-      />
-      <iframe className='shadow' style={{marginTop: '120px'}} width='100%' height='500px' src='https://www.youtube.com/embed/zTJ3TuRWhLA' frameBorder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowFullScreen />
+      /> 
     </Layout>
   )
 }
+
 export const query = graphql`
   query Home($locale: String) {
     hero: file(name: { eq: $locale }, relativeDirectory: { eq: "hero" }) {

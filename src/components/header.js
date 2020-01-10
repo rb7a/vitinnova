@@ -22,7 +22,7 @@ class Header extends React.Component {
       <header>
         <section className="mobile-nav">
          
-            <a href="https://www.facebook.com/vitinnovavitinnova/"><img src={fbIcon} /></a>
+            <a href="https://www.facebook.com/vitinnovavitinnova/" target='_blank'><img src={fbIcon} /></a>
           
        
           {this.state.visible ? (
@@ -87,7 +87,7 @@ class Header extends React.Component {
             </li>
           </ul>
           
-          <a href="https://www.facebook.com/vitinnovavitinnova/"><img src={fbIcon} style={{position: 'relative', top: '5px'}}/></a>
+          <a href="https://www.facebook.com/vitinnovavitinnova/" target='_blank'><img src={fbIcon} style={{position: 'relative', top: '5px'}}/></a>
          
         </nav>
       </header>
