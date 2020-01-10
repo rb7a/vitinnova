@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import LocalizedLink from "./LocalizedLink"
 import "./header.css"
+import fbIcon from '../images/facebook-icon.png'
 
 // import logo from "../images/veggie-med-cheeses-logo.png"
 
@@ -22,8 +23,8 @@ class Header extends React.Component {
         <section className="mobile-nav">
           <Link to="/">
             {" "}
-            {/* <img src={logo} alt="logo-veggie-cheese" width="240px" /> */}
-            logo
+            <a href="https://www.facebook.com/vitinnovavitinnova/"><img src={fbIcon} /></a>
+          
           </Link>
           {this.state.visible ? (
             <div onClick={this.showMobileMenu} className="burger-icon-close">
@@ -87,9 +88,7 @@ class Header extends React.Component {
             </li>
           </ul>
           <LocalizedLink to="/">
-            {" "}
-            {/* <img className="logo" src={logo} alt="logo-veggie-cheese" width="240px" /> */}
-            logo
+          <a href="https://www.facebook.com/vitinnovavitinnova/"><img src={fbIcon} style={{position: 'relative', top: '5px'}}/></a>
           </LocalizedLink>
         </nav>
       </header>

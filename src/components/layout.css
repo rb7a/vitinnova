@@ -622,6 +622,9 @@ pre tt:after {
 } */
 
 /* STYLE */
+html, body{
+  width: 100%
+}
 body,
 h1,
 h2 {
@@ -634,6 +637,9 @@ p {
 }
 .container {
   width: 90%;
+}
+.shadow{
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 @media (min-width: 1200xp) {

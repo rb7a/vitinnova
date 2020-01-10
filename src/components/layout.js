@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Header from './header'
+import Footer from './footer'
 import './layout.css'
 
 const {
@@ -9,7 +10,7 @@ const {
   Consumer: LocaleConsumer
 } = React.createContext()
 
-const Layout = ({ children, locale, data }) => { // accesss data"
+const Layout = ({ children, locale, data, titleFooter, subtitleFooter }) => { // accesss data"
   console.log(data, 'fromlayout')
   return (
     <LocaleProvider value={locale}>
@@ -24,11 +25,7 @@ const Layout = ({ children, locale, data }) => { // accesss data"
           }}
         >
           <main>{children}</main>
-          {/* <footer>
-        © {new Date().getFullYear()}, Built with
-            {' '}
-            <a href='https://www.gatsbyjs.org'>Gatsby</a>
-          </footer> */}
+          <Footer titleFooter={ data.hero.childHeroJson.title } subtitleFooter={ data.footer.childFooterJson.subtitle } />
         </div>
       </>
     </LocaleProvider>

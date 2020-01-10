@@ -6,10 +6,11 @@ import SEO from '../components/seo'
 import LocalizedLink from '../components/LocalizedLink'
 import Hero from '../components/Hero'
 import AboutHome from '../components/aboutHome'
+import GoalsHome from '../components/goalsHome'
 
 const IndexPage = ({ pageContext: { locale }, data }) => {
   return (
-    <Layout path='/' locale={locale} data={data}> {/* site title gets from graphql query and pass it to layout component */}
+    <Layout path='/' locale={locale} data={data} titleFooter={data.footer.childFooterJson.title} subtitleFooter={data.footer.childFooterJson.subtitle}> {/* site title gets from graphql query and pass it to layout component */}
       <SEO title='Home' />
       <Hero
         title={data.hero.childHeroJson.title}
@@ -21,6 +22,21 @@ const IndexPage = ({ pageContext: { locale }, data }) => {
         subtitle={data.aboutHome.childAboutHomeJson.subtitle}
         cta={data.aboutHome.childAboutHomeJson.cta}
       />
+      <GoalsHome
+        titleSection={data.goalsHome.childGoalsHomeJson.titleSection}
+        subtitleSection={data.goalsHome.childGoalsHomeJson.subtitleSection}
+        title1={data.goalsHome.childGoalsHomeJson.title1}
+        subtitle1={data.goalsHome.childGoalsHomeJson.subtitle1}
+        title2={data.goalsHome.childGoalsHomeJson.title2}
+        subtitle2={data.goalsHome.childGoalsHomeJson.subtitle2}
+        title3={data.goalsHome.childGoalsHomeJson.title3}
+        subtitle3={data.goalsHome.childGoalsHomeJson.subtitle3}
+        title4={data.goalsHome.childGoalsHomeJson.title4}
+        subtitle4={data.goalsHome.childGoalsHomeJson.subtitle4}
+        title5={data.goalsHome.childGoalsHomeJson.title5}
+        subtitle5={data.goalsHome.childGoalsHomeJson.subtitle5}
+      />
+      <iframe className='shadow' style={{marginTop: '120px'}} width='100%' height='500px' src='https://www.youtube.com/embed/zTJ3TuRWhLA' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen />
     </Layout>
   )
 }
@@ -38,6 +54,28 @@ export const query = graphql`
         title
         subtitle
         cta
+      }
+    }
+    goalsHome: file(name: { eq: $locale }, relativeDirectory: { eq: "goalsHome" }) {
+      childGoalsHomeJson {
+        titleSection
+        subtitleSection
+        title1
+        subtitle1
+        title2
+        subtitle2
+        title3
+        subtitle3
+        title4
+        subtitle4
+        title5
+        subtitle5
+      }
+    }
+    footer: file(name: { eq: $locale }, relativeDirectory: { eq: "footer" }) {
+      childFooterJson {
+        title
+        subtitle
       }
     }
   }

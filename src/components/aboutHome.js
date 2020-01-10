@@ -8,7 +8,7 @@ function aboutHome ({ title, subtitle, cta }) {
   return (
     <section className='about-home'>
       <div>
-        <img src={imgAboutHome} />
+        <img className='shadow' src={imgAboutHome} />
       </div>
       <div>
         <h2>{title}</h2>
