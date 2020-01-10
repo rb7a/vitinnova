@@ -21,11 +21,10 @@ class Header extends React.Component {
     return (
       <header>
         <section className="mobile-nav">
-          <Link to="/">
-            {" "}
+         
             <a href="https://www.facebook.com/vitinnovavitinnova/"><img src={fbIcon} /></a>
           
-          </Link>
+       
           {this.state.visible ? (
             <div onClick={this.showMobileMenu} className="burger-icon-close">
               <span>X</span>
@@ -87,9 +86,9 @@ class Header extends React.Component {
               <LocalizedLink to="/contatti">Contatti</LocalizedLink>
             </li>
           </ul>
-          <LocalizedLink to="/">
+          
           <a href="https://www.facebook.com/vitinnovavitinnova/"><img src={fbIcon} style={{position: 'relative', top: '5px'}}/></a>
-          </LocalizedLink>
+         
         </nav>
       </header>
     )
