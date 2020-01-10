@@ -24,7 +24,6 @@ const Layout = ({ children, locale, data, titleFooter, subtitleFooter }) => { //
           }}
         >
           <main>{children}</main>
-
         </div>
       </>
     </LocaleProvider>
