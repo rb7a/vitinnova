@@ -27,5 +27,9 @@ module.exports = [
   {
     path: '/team',
     component: path.resolve('src/pages/team.js')
+  },
+  {
+    path: '/team',
+    component: path.resolve('src/pages/team.js')
   }
 ]

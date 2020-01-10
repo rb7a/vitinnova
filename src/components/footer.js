@@ -14,7 +14,6 @@ function footer ({ titleFooter, subtitleFooter }) {
         <p>{subtitleFooter} </p>
 
         <div className='contact-container'>
-
           <div>
             <img className='footer-icon' src={mailIcon} alt='email-icon' />
             <p><a href='mailto:ancona@cia.it'>ancona@cia.it</a></p>
