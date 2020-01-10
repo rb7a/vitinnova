@@ -15,7 +15,7 @@ const Layout = ({ children, locale, data, titleFooter, subtitleFooter }) => { //
   return (
     <LocaleProvider value={locale}>
       <>
-        <Header data={data} />        {/* pass 'data' to header so it can use GraphQL query  */}
+        <Header data={data} />     
         <div
           style={{
             margin: '0 auto',
@@ -25,7 +25,7 @@ const Layout = ({ children, locale, data, titleFooter, subtitleFooter }) => { //
           }}
         >
           <main>{children}</main>
-          <Footer titleFooter={ data.hero.childHeroJson.title } subtitleFooter={ data.footer.childFooterJson.subtitle } />
+          {/* <Footer titleFooter={ data.footer.childFooterJson.title } subtitleFooter={ data.footer.childFooterJson.subtitle } /> */}
         </div>
       </>
     </LocaleProvider>

@@ -10,8 +10,8 @@ import GoalsHome from '../components/goalsHome'
 
 const IndexPage = ({ pageContext: { locale }, data }) => {
   return (
-    <Layout path='/' locale={locale} data={data} titleFooter={data.footer.childFooterJson.title} subtitleFooter={data.footer.childFooterJson.subtitle}> {/* site title gets from graphql query and pass it to layout component */}
-      <SEO title='Vittinova' />
+    <Layout path='/' locale={locale} data={data} titleFooter={data.footer.childFooterJson.title} subtitleFooter={data.footer.childFooterJson.subtitle}>
+    <SEO title='Vittinova' />
       <Hero
         title={data.hero.childHeroJson.title}
         subtitle={data.hero.childHeroJson.subtitle}
