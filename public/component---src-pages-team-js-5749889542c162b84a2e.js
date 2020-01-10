@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{xkl6:function(t,e,o){"use strict";o.r(e),o.d(e,"query",(function(){return r}));var n=o("q1tI"),a=o.n(n),l=o("Bl7J"),r="2508292307";e.default=function(t){var e=t.pageContext.locale,o=t.data;return a.a.createElement(l.b,{path:"/",locale:e,data:o,titleFooter:o.footer.childFooterJson.title,subtitleFooter:o.footer.childFooterJson.subtitle},a.a.createElement("p",null,"team"))}}}]);
+//# sourceMappingURL=component---src-pages-team-js-5749889542c162b84a2e.js.map
