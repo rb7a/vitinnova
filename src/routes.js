@@ -33,13 +33,28 @@ module.exports = [
     component: path.resolve('src/pages/team.js')
   },
   // SOCIETA COOPERATIVA
-  // TEAM
   {
     path: '/societa-cooperativa-agricola',
     component: path.resolve('src/pages/societaCooperativa.js')
   },
+  // MONCARO
   {
-    path: '/societa-cooperativa-agricola',
-    component: path.resolve('src/pages/societaCooperativa.js')
+    path: '/moncaro',
+    component: path.resolve('src/pages/moncaro.js')
+  },
+  // BELISARIO
+  {
+    path: '/belisario',
+    component: path.resolve('src/pages/belisario.js')
+  },
+  // UNIVPM
+  {
+    path: '/univpm',
+    component: path.resolve('src/pages/univpm.js')
+  },
+  // CIA
+  {
+    path: '/cia',
+    component: path.resolve('src/pages/cia.js')
   }
 ]

@@ -9,9 +9,8 @@ import GoalsHome from '../components/goalsHome'
 const IndexPage = ({ pageContext: { locale }, data }) => {
   return (
     <Layout path='/' locale={locale} data={data} titleFooter={data.footer.childFooterJson.title} subtitleFooter={data.footer.childFooterJson.subtitle}>
-      <Seo title='Vittinova' />
+      <Seo title='Vitinnova' description='La Rivoluzione Vitivinicola' />
       <section className='container'>
-
         <Hero
           title={data.hero.childHeroJson.title}
           subtitle={data.hero.childHeroJson.subtitle}

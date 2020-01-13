@@ -23,12 +23,21 @@ const Team = ({ pageContext: { locale }, data }) => {
           <LocalizedLink to='/societa-cooperativa-agricola'>
             <img className='logo-team' src={societaCoperativa} alt='societa-cooperativa-agricola' />
           </LocalizedLink>
-          <img className='logo-team' src={moncaro} alt='moncaro' />
+          <LocalizedLink to='/moncaro'>
+            <img className='logo-team' src={moncaro} alt='moncaro' />
+          </LocalizedLink>
+          <LocalizedLink to='/belisario'>
           <img className='logo-team' src={belisario} alt='belisario' />
+          </LocalizedLink>
+          <LocalizedLink to='/univpm'>
           <img className='logo-team' src={univpm} alt='univpm' />
+          </LocalizedLink>
+          <LocalizedLink to='/cia'>
           <img className='logo-team' src={agricoltoriItaliani} alt='agricoltori-italiani' />
+          </LocalizedLink>
+          <LocalizedLink to='/assam'>
           <img className='logo-team' src={assam} alt='assam' />
-
+          </LocalizedLink>
         </div>
       </section>
       <style jsx='true'>{`
