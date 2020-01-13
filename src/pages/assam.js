@@ -11,6 +11,7 @@ const Assam = ({ pageContext: { locale }, data }) => {
         <div style={{ textAlign: 'center', marginTop: '120px', marginBottom: '180px' }}>
           <h1>AGENZIA SERVIZI SETTORE <span style={{ color: '#b00020' }}>AGROALIMENTARE</span></h1>
         </div>
+        <div className='shadow-page'>
         <p>
         L’ASSAM, Agenzia Servizi Settore Agroalimentare delle Marche, è un ente pubblico economico istituito con legge regionale n. 9 del 14 gennaio 1997 e modificata con legge regionale n. 28 del 16 settembre 2013.<br/><br/>  Oltre alla sede centrale di Osimo, ha sedi operative in tutta la regione. ASSAM ha uno staff tecnico e amministrativo qualificato e di alto livello, costantemente addestrato e aggiornato in grado di gestire progetti, condurre studi e ricerche e attuare politiche. In ASSAM lavorano centocinque persone, la maggior parte delle quali sono tecnici del settore agroalimentare.
         <br/><br/>L’agenzia costituisce lo strumento regionale di riferimento e di raccordo tra il sistema produttivo ed il mondo della ricerca. Tra le sue funzioni principali vi è la realizzazione di studi e ricerche in collaborazione con Università e Istituzioni di ricerca. <br/><br/>In questo ambito, attua progetti nel settore cerealicolo ed ortofrutticolo, con particolare attenzione al settore biologico e del basso impatto ambientale. In questi ultimi anni l’Agenzia si sta sempre più allineando verso la strategia di crescita Europa 2020, applicando la visione europea sull’innovazione, anche attraverso le nuove funzioni di progettazione comunitaria per poter svolgere un ruolo determinante nel trasferimento dell’innovazione.
@@ -35,6 +36,7 @@ Le attività di divulgazione ed informazione rappresentano da sempre una attivit
 
 
         </p>
+        </div>
       </section>
     </Layout>
   )

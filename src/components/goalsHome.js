@@ -10,7 +10,7 @@ const goalsHome = ({ titleSection, subtitleSection, title1, subtitle1, title2, s
         {subtitleSection}
       </p>
     </div>
-    <div className='container' id='why-section'>
+    <div id='why-section'>
       <div className='why-box'>
         <span>1</span>
         <strong>{title1}</strong>
