@@ -12,10 +12,10 @@ function footer ({ titleFooter, subtitleFooter }) {
   return (
     <section>
       <div className='gallery'>
-        <img className='gallery-img' src={gallery1} alt='gallery-vittinova' />
-        <img className='gallery-img' src={gallery2} alt='gallery-vittinova' />
-        <img className='gallery-img' src={gallery3} alt='gallery-vittinova' />
         <img className='gallery-img' src={gallery4} alt='gallery-vittinova' />
+        <img className='gallery-img' src={gallery2} alt='gallery-vittinova' />
+        <img className='gallery-img' src={gallery1} alt='gallery-vittinova' />
+        <img className='gallery-img' src={gallery3} alt='gallery-vittinova' />
       </div>
       <footer>
         <div className='footer-container shadow'>

@@ -1,14 +1,11 @@
 import React from 'react'
 
-const goalsHome = ({ titleSection, subtitleSection, title1, subtitle1, title2, subtitle2, title3, subtitle3, title4, subtitle4, title5, subtitle5 }) => (
+const goalsHome = ({ titleSection, title1, subtitle1, title2, subtitle2, title3, subtitle3, title4, subtitle4, title5, subtitle5 }) => (
   <section className='goals-section'>
     <div>
       <h2>
         {titleSection}
       </h2>
-      <p>
-        {subtitleSection}
-      </p>
     </div>
     <div id='why-section'>
       <div className='why-box'>

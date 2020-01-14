@@ -43,11 +43,12 @@ class Header extends React.Component {
                 <LocalizedLink to="/">Home</LocalizedLink>
               </li>
               <li>
-                <LocalizedLink to="/il-progetto">Il progetto</LocalizedLink>
-              </li>
-              <li>
                 <LocalizedLink to="/innovazione">Innovazione</LocalizedLink>
               </li>
+              <li>
+                <LocalizedLink to="/il-progetto">Il progetto</LocalizedLink>
+              </li>
+             
               <li>
                 <LocalizedLink to="/team">Team</LocalizedLink>
               </li>
@@ -64,11 +65,12 @@ class Header extends React.Component {
               <LocalizedLink to="/">Home</LocalizedLink>
             </li>
             <li>
-              <LocalizedLink to="/il-progetto">Il progetto</LocalizedLink>
-            </li>
-            <li>
               <LocalizedLink to="/innovazione">Innovazione</LocalizedLink>
             </li>
+            <li>
+              <LocalizedLink to="/il-progetto">Il progetto</LocalizedLink>
+            </li>
+          
             <li>
               <LocalizedLink to="/team">Team</LocalizedLink>
             </li>

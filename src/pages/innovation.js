@@ -13,11 +13,11 @@ const Innovation = ({ pageContext: { locale }, data }) => {
         <div style={{ textAlign: 'center', marginTop: '120px', marginBottom: '180px' }}>
 
           <h1>L'<span style={{ color: '#b00020' }}>INNOVAZIONE</span> DI VITTINOVA</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, doloribus.</p>
+          <p>Le azioni di progetto e il percorso produttivo.</p>
 
         </div>
         <div>
-          <h2>Lorem ipsum</h2>
+          <h2>Introduzione all'innovazione</h2>
           <p>L’utilizzo in campo di prodotti antiperonosporici alternativi al rame, seguito dall’uso di gas criogeni e ozono per la sanificazione delle uve e degli impianti in cantina e dall'impiego di lieviti autoctoni selezionati e migliorati, idonei a ridurre la presenza di SO2 e H2S nei vini, sarà il fondamento per ottenere vini senza solfiti aggiunti né prodotti dai lieviti.<br /><br />
 La viticoltura di precisione, agli albori in Italia, verrà applicata a scala aziendale su almeno 80 ha di vigneto per generare mappe di vigore, che dovranno essere validate ai fini del loro uso per definire le mappe di prescrizione, ovvero la calibrazione degli interventi colturali volti ad aumentare la sostenibilità ambientale e l’adattamento al cambio climatico.<br /><br /> Per raggiungere appieno questo ultimo obiettivo, sarà introdotto anche un monitoraggio precoce della maturazione dell’uva per verificare la necessità di azioni correttive, prevedere la data di vendemmia e definire il momento ottimale.<br /><br /> L’uso di vendemmiatrici meccaniche anche nelle zone più declivi (pendenze superiori al 20%) aumenterà la tempestività dell’intervento e la possibilità di raccogliere uve sane.
           </p>

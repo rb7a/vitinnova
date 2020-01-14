@@ -17,7 +17,7 @@ const Team = ({ pageContext: { locale }, data }) => {
       <section className='container' style={{ padding: '0 4%', marginBottom: '180px' }}>
         <div style={{ textAlign: 'center', marginTop: '120px', marginBottom: '80px' }}>
           <h1>IL NOSTRO <span style={{ color: '#b00020' }}>TEAM</span></h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, doloribus.</p>
+          <p>Questi i partner di progetto.</p>
         </div>
         <div className='logo-container'>
           <LocalizedLink to='/societa-cooperativa-agricola'>
@@ -27,16 +27,16 @@ const Team = ({ pageContext: { locale }, data }) => {
             <img className='logo-team' src={moncaro} alt='moncaro' />
           </LocalizedLink>
           <LocalizedLink to='/belisario'>
-          <img className='logo-team' src={belisario} alt='belisario' />
+            <img className='logo-team' src={belisario} alt='belisario' />
           </LocalizedLink>
           <LocalizedLink to='/univpm'>
-          <img className='logo-team' src={univpm} alt='univpm' />
+            <img className='logo-team' src={univpm} alt='univpm' />
           </LocalizedLink>
           <LocalizedLink to='/cia'>
-          <img className='logo-team' src={agricoltoriItaliani} alt='agricoltori-italiani' />
+            <img className='logo-team' src={agricoltoriItaliani} alt='agricoltori-italiani' />
           </LocalizedLink>
           <LocalizedLink to='/assam'>
-          <img className='logo-team' src={assam} alt='assam' />
+            <img className='logo-team' src={assam} alt='assam' />
           </LocalizedLink>
         </div>
       </section>
