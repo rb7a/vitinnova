@@ -2,8 +2,8 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Seo from '../components/seo'
 import Layout from '../components/layout'
-import innovationDesign from '../images/vitinnova-innovazione.png'
-import innovationDesignMobile from '../images/vitinnova-innovazione-mobile.png'
+import innovationDesign from '../images/vitinnova-innovazione.jpg'
+import innovationDesignMobile from '../images/vitinnova-innovazione-mobile.jpg'
 
 const Innovation = ({ pageContext: { locale }, data }) => {
   return (
@@ -12,9 +12,8 @@ const Innovation = ({ pageContext: { locale }, data }) => {
       <section className='container' style={{ padding: '0 4%' }}>
         <div style={{ textAlign: 'center', marginTop: '120px', marginBottom: '180px' }}>
 
-          <h1>L'<span style={{ color: '#b00020' }}>INNOVAZIONE</span> DI VITTINOVA</h1>
+          <h1>L'<span style={{ color: '#b00020' }}>INNOVAZIONE</span> DI VITINNOVA</h1>
           <p>Le azioni di progetto e il percorso produttivo.</p>
-
         </div>
         <div>
           <h2>Introduzione all'innovazione</h2>
@@ -212,8 +211,8 @@ Applicazione in campo degli interventi colturali calibrati sulla base delle mapp
       </section>
       <div>
 
-        <img className='innovation-graphic' src={innovationDesign} alt='vittinova-innovazione' />
-        <img className='innovation-graphic-mobile' src={innovationDesignMobile} alt='vittinova-innovazione-mobile' />
+        <img className='innovation-graphic' style={{ width: '80%' }} src={innovationDesign} alt='vitinnova-innovazione' />
+        <img className='innovation-graphic-mobile' src={innovationDesignMobile} alt='vitinnova-innovazione-mobile' />
       </div>
 
       <style jsx='true'>{`
