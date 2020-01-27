@@ -13,7 +13,7 @@ const Project = ({ pageContext: { locale }, data }) => {
           <p>Gli obbiettivi generali e operativi di Vitinnova.</p>
         </div>
         <div>
-          <h2>Obiettivo generale</h2>
+          <h2>Obbiettivo generale</h2>
           <p>L’intento è quello di abbattere l’impiego di rame nei vigneti biologici, sostituendolo con prodotti alternativi di efficacia dimostrata, che necessitano di una messa a punto all’interno di specifiche condizioni aziendali e colturali.<br /><br /> Verranno monitorati lo sviluppo vegetativo, l’equilibrio vegeto-produttivo ed il decorso della maturazione delle uve, così da modulare gli interventi agronomici e mitigare gli effetti dei cambiamenti climatici, anche attraverso le tecniche di “precision farming”.<br /><br /> Inoltre, si propone la produzione di vino biologico a basso tenore o in assenza di solfiti, così da migliorare la qualità e la sicurezza del prodotto finito, per una dieta sana ed equilibrata.</p>
           <h2 style={{ marginTop: '80px' }}>Obbiettivi operativi</h2>
           <p>Il progetto VITINNOVA si propone di innovare le strategie di protezione antiperonosporica delle viti in biologico attraverso l’uso di sostanze alternative al rame, quali il chitosano, così da ottenere la produzione di vini con un uso ridotto o assente del pericoloso metallo pesante, che è noto accumularsi nei terreni vitati ed il cui apporto è soggetto a restrizioni, con limiti di utilizzo destinati a ridursi ulteriormente.<br /><br />

@@ -28,8 +28,6 @@ const IndexPage = ({ pageContext: { locale }, data }) => {
           subtitle1={data.goalsHome.childGoalsHomeJson.subtitle1}
           title2={data.goalsHome.childGoalsHomeJson.title2}
           subtitle2={data.goalsHome.childGoalsHomeJson.subtitle2}
-          title3={data.goalsHome.childGoalsHomeJson.title3}
-          subtitle3={data.goalsHome.childGoalsHomeJson.subtitle3}
           title4={data.goalsHome.childGoalsHomeJson.title4}
           subtitle4={data.goalsHome.childGoalsHomeJson.subtitle4}
           title5={data.goalsHome.childGoalsHomeJson.title5}
@@ -66,8 +64,6 @@ export const query = graphql`
         subtitle1
         title2
         subtitle2
-        title3
-        subtitle3
         title4
         subtitle4
         title5

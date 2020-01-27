@@ -1,6 +1,6 @@
 import React from 'react'
 
-const goalsHome = ({ titleSection, title1, subtitle1, title2, subtitle2, title3, subtitle3, title4, subtitle4, title5, subtitle5 }) => (
+const goalsHome = ({ titleSection, title1, subtitle1, title2, subtitle2, title4, subtitle4, title5, subtitle5 }) => (
   <section className='goals-section'>
     <div>
       <h2>
@@ -15,7 +15,6 @@ const goalsHome = ({ titleSection, title1, subtitle1, title2, subtitle2, title3,
           {subtitle1}
         </p>
       </div>
-      <div className='why-box' />
       <div className='why-box'>
         <span>2</span>
         <strong>{title2}</strong>
@@ -23,25 +22,16 @@ const goalsHome = ({ titleSection, title1, subtitle1, title2, subtitle2, title3,
           {subtitle2}
         </p>
       </div>
-      <div className='why-box' />
       <div className='why-box'>
         <span>3</span>
-        <strong>{title3}</strong>
-        <p>
-          {subtitle3}
-        </p>
-      </div>
-      <div className='why-box' />
-      <div className='why-box'>
-        <span>4</span>
         <strong>{title4}</strong>
         <p>
           {subtitle4}
         </p>
       </div>
-      <div className='why-box' />
+
       <div className='why-box'>
-        <span>5</span>
+        <span>4</span>
         <strong>{title5}</strong>
         <p>
           {subtitle5}
@@ -82,20 +72,14 @@ const goalsHome = ({ titleSection, title1, subtitle1, title2, subtitle2, title3,
         }
         #why-section {
          margin-top: 60px;
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          grid-template-rows: 1fr 1fr 1fr;
-          grid-column-gap: 0px;
-          grid-row-gap: 0px;
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: repeat(2, 1fr);
+         grid-column-gap: 120px;
+         grid-row-gap: 0px;
+         
         }
 
-        .why-box p {
-          width: 140%;
-          margin: 0 auto;
-          position: relative;
-          right: 60px;
-          top: 20px
-      }
       }
     `}
     </style>
