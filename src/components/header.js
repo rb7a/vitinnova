@@ -52,6 +52,10 @@ class Header extends React.Component {
               <li>
                 <LocalizedLink to="/team">Team</LocalizedLink>
               </li>
+
+              <li>
+              <LocalizedLink to="/contatti">Contatti</LocalizedLink>
+            </li>
              
             </ul>
           </nav>
@@ -73,6 +77,10 @@ class Header extends React.Component {
           
             <li>
               <LocalizedLink to="/team">Team</LocalizedLink>
+            </li>
+
+            <li>
+              <LocalizedLink to="/contatti">Contatti</LocalizedLink>
             </li>
           
            

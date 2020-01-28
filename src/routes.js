@@ -56,5 +56,14 @@ module.exports = [
   {
     path: '/cia',
     component: path.resolve('src/pages/cia.js')
+  },
+  // CONTACT
+  {
+    path: '/contatti',
+    component: path.resolve('src/pages/contact.js')
+  },
+  {
+    path: '/contact',
+    component: path.resolve('src/pages/contact.js')
   }
 ]
