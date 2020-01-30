@@ -35,6 +35,7 @@ Le attività di divulgazione ed informazione rappresentano da sempre una attivit
 <br/><br/>Le attività di disseminazione sono completate dall'organizzazione di seminari e convegni tenuti sui temi attinenti le attività progettuali gestite da ASSAM
 
 
+
         </p>
         </div>
       </section>
