@@ -4,6 +4,7 @@ import Seo from '../components/seo'
 import Layout from '../components/layout'
 
 const Contact = ({ pageContext: { locale }, data }) => {
+  const { title1, title2, title3, subtitle, phone } = data.contact.childContactJson
   return (
     <div className='contact'>
       <Layout path='/' locale={locale} data={data} titleFooter={data.footer.childFooterJson.title} subtitleFooter={data.footer.childFooterJson.subtitle}>
@@ -11,12 +12,12 @@ const Contact = ({ pageContext: { locale }, data }) => {
         <Seo title='Il progetto' />
         <section className='container' style={{ padding: '0 4%', marginBottom: '200px' }}>
           <div style={{ textAlign: 'center', marginTop: '120px', marginBottom: '180px' }}>
-            <h1>TI VUOI METTERE IN <span style={{ color: '#b00020' }}>CONTATTO</span> CON NOI?</h1>
-            <p>Per maggiori informazioni su Vitinnova:</p>
+            <h1>{title1} <span style={{ color: '#b00020' }}>{title2}</span> {title3}</h1>
+            <p>{subtitle}</p>
           </div>
           <div className='contact-page-container'>
             <p><strong>Email:</strong><a href='mailto:ancona@cia.it'> ancona@cia.it</a></p>
-            <p><strong>Telefono:</strong><a href='tel:071200437'> 071 200437</a></p>
+            <p><strong>{phone}</strong><a href='tel:071200437'> 071 200437</a></p>
           </div>
         </section>
       </Layout>
@@ -60,6 +61,15 @@ export const query = graphql`
       childFooterJson {
         title
         subtitle
+      }
+    }
+    contact: file(name: { eq: $locale }, relativeDirectory: { eq: "contact" }) {
+      childContactJson {
+        title1
+        title2
+        title3
+        subtitle
+        phone
       }
     }
   }

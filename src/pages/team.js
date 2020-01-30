@@ -11,13 +11,14 @@ import assam from '../images/assam.png'
 import Layout from '../components/layout'
 
 const Team = ({ pageContext: { locale }, data }) => {
+  const {title1, title2, subtitle} = data.team.childTeamJson
   return (
     <Layout path='/' locale={locale} data={data} titleFooter={data.footer.childFooterJson.title} subtitleFooter={data.footer.childFooterJson.subtitle}>
       <Seo title='Il progetto' />
       <section className='container' style={{ padding: '0 4%', marginBottom: '180px' }}>
         <div style={{ textAlign: 'center', marginTop: '120px', marginBottom: '80px' }}>
-          <h1>IL NOSTRO <span style={{ color: '#b00020' }}>TEAM</span></h1>
-          <p>Questi i partner di progetto.</p>
+          <h1>{title1} <span style={{ color: '#b00020' }}>{title2}</span></h1>
+          <p>{subtitle}</p>
         </div>
         <div className='logo-container'>
           <LocalizedLink to='/societa-cooperativa-agricola'>
@@ -66,6 +67,13 @@ export const query = graphql`
     footer: file(name: { eq: $locale }, relativeDirectory: { eq: "footer" }) {
       childFooterJson {
         title
+        subtitle
+      }
+    }
+    team: file(name: { eq: $locale }, relativeDirectory: { eq: "team" }) {
+      childTeamJson {
+        title1
+        title2
         subtitle
       }
     }
