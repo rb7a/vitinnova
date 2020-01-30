@@ -6,19 +6,20 @@ import innovationDesign from '../images/vitinnova-innovazione.jpg'
 import innovationDesignMobile from '../images/vitinnova-innovazione-mobile.jpg'
 
 const Innovation = ({ pageContext: { locale }, data }) => {
+  const { title1, title2, title3, subtitle, titleP, p1, p2, p3, p4 } = data.innovation.childInnovationJson
   return (
     <Layout path='/' locale={locale} data={data} titleFooter={data.footer.childFooterJson.title} subtitleFooter={data.footer.childFooterJson.subtitle}>
       <Seo title='Il progetto' />
       <section className='container' style={{ padding: '0 4%' }}>
         <div style={{ textAlign: 'center', marginTop: '120px', marginBottom: '180px' }}>
 
-          <h1>L'<span style={{ color: '#b00020' }}>INNOVAZIONE</span> DI VITINNOVA</h1>
-          <p>Le azioni di progetto e il percorso produttivo.</p>
+          <h1>{title1}<span style={{ color: '#b00020' }}>{title2}</span> {title3}</h1>
+          <p>{subtitle}</p>
         </div>
         <div>
-          <h2>Introduzione all'innovazione</h2>
-          <p>L’utilizzo in campo di prodotti antiperonosporici alternativi al rame, seguito dall’uso di gas criogeni e ozono per la sanificazione delle uve e degli impianti in cantina e dall'impiego di lieviti autoctoni selezionati e migliorati, idonei a ridurre la presenza di SO2 e H2S nei vini, sarà il fondamento per ottenere vini senza solfiti aggiunti né prodotti dai lieviti.<br /><br />
-La viticoltura di precisione, agli albori in Italia, verrà applicata a scala aziendale su almeno 80 ha di vigneto per generare mappe di vigore, che dovranno essere validate ai fini del loro uso per definire le mappe di prescrizione, ovvero la calibrazione degli interventi colturali volti ad aumentare la sostenibilità ambientale e l’adattamento al cambio climatico.<br /><br /> Per raggiungere appieno questo ultimo obbiettivo, sarà introdotto anche un monitoraggio precoce della maturazione dell’uva per verificare la necessità di azioni correttive, prevedere la data di vendemmia e definire il momento ottimale.<br /><br /> L’uso di vendemmiatrici meccaniche anche nelle zone più declivi (pendenze superiori al 20%) aumenterà la tempestività dell’intervento e la possibilità di raccogliere uve sane.
+          <h2>{titleP}</h2>
+          <p>{p1}<br /><br />
+{p2}<br /><br /> {p3}<br /><br /> {p4}
           </p>
           <h2 style={{ marginTop: '80px' }}>Azioni del progetto</h2>
           <table>
@@ -265,6 +266,19 @@ export const query = graphql`
       childFooterJson {
         title
         subtitle
+      }
+    }
+    innovation: file(name: { eq: $locale }, relativeDirectory: { eq: "innovation" }) {
+      childInnovationJson {
+        title1
+        title2
+        title3
+        subtitle
+        titleP
+        p1
+        p2
+        p3
+        p4
       }
     }
   }
