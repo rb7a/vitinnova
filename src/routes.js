@@ -65,5 +65,9 @@ module.exports = [
   {
     path: '/contact',
     component: path.resolve('src/pages/contact.js')
+  },
+  {
+    path: '/policy',
+    component: path.resolve("src/pages/privacyPolicy.js")
   }
 ]
