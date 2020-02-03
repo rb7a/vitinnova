@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect,useState } from 'react'
 // import PropTypes from 'prop-types'
 // import { graphql } from 'gatsby'
 import Header from './header'
@@ -13,6 +13,11 @@ const {
 
 const Layout = ({ children, locale, data, titleFooter, subtitleFooter }) => { // accesss data"
  
+ const [cookieBanner, setKey] = useState(undefined)
+
+useEffect(() => {
+  setKey(localStorage.getItem("setCookie") )
+}, [])
 return (
     <LocaleProvider value={locale}>
       <>
@@ -21,8 +26,7 @@ return (
         <main>{children}</main>
 
         <Footer titleFooter={titleFooter} subtitleFooter={subtitleFooter} />
-        {console.log(!localStorage.getItem("setCookie") )}
-        {!localStorage.getItem("setCookie") ? <CookieBanner /> : ''}
+        {!cookieBanner && <CookieBanner /> }
       </>
     </LocaleProvider>
   )
