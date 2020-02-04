@@ -13,11 +13,7 @@ const {
 
 const Layout = ({ children, locale, data, titleFooter, subtitleFooter }) => { // accesss data"
  
- const [cookieBanner, setKey] = useState(undefined)
 
-useEffect(() => {
-  setKey(localStorage.getItem("setCookie") )
-}, [])
 return (
     <LocaleProvider value={locale}>
       <>
@@ -26,7 +22,7 @@ return (
         <main>{children}</main>
 
         <Footer titleFooter={titleFooter} subtitleFooter={subtitleFooter} />
-        {!cookieBanner && <CookieBanner /> }
+        <CookieBanner />
       </>
     </LocaleProvider>
   )
