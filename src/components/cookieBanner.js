@@ -4,12 +4,14 @@ import LocalizedLink from "./LocalizedLink"
 import "./cookieBanner.css"
 
 const CookieBanner = () => {
-    const [showCookie, toggleCookie] = useState(true);
+    const [showCookie, toggleCookie] = useState(false);
 
     useEffect(() => {
         const showBanner =  localStorage.getItem("setCookie");
         if(showBanner) {
             toggleCookie(false)
+        } else {
+            toggleCookie(true)
         }
     },[]);
 const handleAccept = () => {
