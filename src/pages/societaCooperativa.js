@@ -4,7 +4,7 @@ import Seo from '../components/seo'
 import Layout from '../components/layout'
 
 const SocietaCooperativa = ({ pageContext: { locale }, data }) => {
-  const {title1, title2, title3, p1, p2, p3, p4, p5, p6 } = data.societaCooperativa.childSocietaCooperativaJson
+  const { title1, title2, title3, p1, p2, p3, p4, p5, p6 } = data.societaCooperativa.childSocietaCooperativaJson
   return (
     <Layout path='/' locale={locale} data={data} titleFooter={data.footer.childFooterJson.title} subtitleFooter={data.footer.childFooterJson.subtitle}>
       <Seo title='Il progetto' />
@@ -13,9 +13,9 @@ const SocietaCooperativa = ({ pageContext: { locale }, data }) => {
           <h1>{title1} <span style={{ color: '#b00020' }}>{title2}</span> {title3}</h1>
         </div>
         <p>{p1}<br /> <br />{p2}<br /><br />{p3}<br /><br />
-{p4}<br /><br />
-{p5}<br /><br />
-{p6}
+          {p4}<br /><br />
+          {p5}<br /><br />
+          {p6}
         </p>
       </section>
     </Layout>
