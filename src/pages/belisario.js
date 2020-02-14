@@ -20,7 +20,6 @@ const Belisario = ({ pageContext: { locale }, data }) => {
           {p4}<br /><br />
           {p5}<br /><br />
           {p6}<br /><br />
-          {p6}<br /><br />
           {p7}<br /><br />
           {p8}<br /><br />
           {p9}<br /><br />
