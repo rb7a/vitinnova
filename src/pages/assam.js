@@ -7,7 +7,14 @@ const Assam = ({ pageContext: { locale }, data }) => {
   const { title1, title2, p1, p2, p3, p4, p5, p6, p7 } = data.assam.childAssamJson
 
   return (
-    <Layout path='/' locale={locale} data={data} titleFooter={data.footer.childFooterJson.title} subtitleFooter={data.footer.childFooterJson.subtitle}>
+    <Layout
+      path='/'
+      locale={locale}
+      data={data}
+      dataHeader={data.header.childHeaderJson}
+      titleFooter={data.footer.childFooterJson.title}
+      subtitleFooter={data.footer.childFooterJson.subtitle}
+    >
       <Seo title='Il progetto' />
       <section className='container' style={{ padding: '0 4%', marginBottom: '200px' }}>
         <div style={{ textAlign: 'center', marginTop: '120px', marginBottom: '180px' }}>
@@ -31,6 +38,13 @@ const Assam = ({ pageContext: { locale }, data }) => {
 
 export const query = graphql`
   query Assam($locale: String) {
+    header: file(name: { eq: $locale }, relativeDirectory: { eq: "header" }) {
+      childHeaderJson {
+        innovation
+        project
+        contact
+      }
+    }
     footer: file(name: { eq: $locale }, relativeDirectory: { eq: "footer" }) {
       childFooterJson {
         title

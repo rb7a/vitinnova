@@ -7,8 +7,14 @@ const Contact = ({ pageContext: { locale }, data }) => {
   const { title1, title2, title3, subtitle, phone } = data.contact.childContactJson
   return (
     <div className='contact'>
-      <Layout path='/' locale={locale} data={data} titleFooter={data.footer.childFooterJson.title} subtitleFooter={data.footer.childFooterJson.subtitle}>
-
+      <Layout
+        path='/'
+        locale={locale}
+        data={data}
+        dataHeader={data.header.childHeaderJson}
+        titleFooter={data.footer.childFooterJson.title}
+        subtitleFooter={data.footer.childFooterJson.subtitle}
+      >
         <Seo title='Il progetto' />
         <section className='container' style={{ padding: '0 4%', marginBottom: '200px' }}>
           <div style={{ textAlign: 'center', marginTop: '120px', marginBottom: '180px' }}>
@@ -57,6 +63,13 @@ const Contact = ({ pageContext: { locale }, data }) => {
 
 export const query = graphql`
   query Contact($locale: String) {
+    header: file(name: { eq: $locale }, relativeDirectory: { eq: "header" }) {
+      childHeaderJson {
+        innovation
+        project
+        contact
+      }
+    }
     footer: file(name: { eq: $locale }, relativeDirectory: { eq: "footer" }) {
       childFooterJson {
         title

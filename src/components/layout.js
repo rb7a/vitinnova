@@ -11,11 +11,11 @@ const {
   Consumer: LocaleConsumer
 } = React.createContext()
 
-const Layout = ({ children, locale, data, titleFooter, subtitleFooter }) => { // accesss data"
+const Layout = ({ children, locale, data, dataHeader, titleFooter, subtitleFooter }) => { // accesss data"
   return (
     <LocaleProvider value={locale}>
       <>
-        <Header data={data} />
+        <Header data={data} locale={locale} dataHeader={dataHeader} />
 
         <main>{children}</main>
 

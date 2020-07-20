@@ -1,25 +1,39 @@
+import './index.css'
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 import Hero from '../components/hero'
 import AboutHome from '../components/aboutHome'
 import GoalsHome from '../components/goalsHome'
+import volantino from '../images/volantino.jpg'
 
 const IndexPage = ({ pageContext: { locale }, data }) => {
   return (
-    <Layout path='/' locale={locale} data={data} titleFooter={data.footer.childFooterJson.title} subtitleFooter={data.footer.childFooterJson.subtitle}>
+    <Layout
+      path='/' locale={locale} data={data}
+      dataHeader={data.header.childHeaderJson}
+      titleFooter={data.footer.childFooterJson.title}
+      subtitleFooter={data.footer.childFooterJson.subtitle}
+    >
       <Seo title='Vitinnova' description='La Rivoluzione Vitivinicola' />
       <section className='container'>
         <Hero
           title={data.hero.childHeroJson.title}
           subtitle={data.hero.childHeroJson.subtitle}
           cta={data.hero.childHeroJson.cta}
+          linkCta={data.hero.childHeroJson.linkCta}
         />
+
+        <img
+          src={volantino} className='volantino'
+        />
+
         <AboutHome
           title={data.aboutHome.childAboutHomeJson.title}
           subtitle={data.aboutHome.childAboutHomeJson.subtitle}
           cta={data.aboutHome.childAboutHomeJson.cta}
+          linkInnovation={data.aboutHome.childAboutHomeJson.linkInnovation}
         />
         <GoalsHome
           titleSection={data.goalsHome.childGoalsHomeJson.titleSection}
@@ -42,18 +56,27 @@ const IndexPage = ({ pageContext: { locale }, data }) => {
 
 export const query = graphql`
   query Home($locale: String) {
+    header: file(name: { eq: $locale }, relativeDirectory: { eq: "header" }) {
+      childHeaderJson {
+        innovation
+        project
+        contact
+      }
+    }
     hero: file(name: { eq: $locale }, relativeDirectory: { eq: "hero" }) {
       childHeroJson {
         title
         subtitle
         cta
+        linkCta
       }
     }
     aboutHome: file(name: { eq: $locale }, relativeDirectory: { eq: "aboutHome" }) {
       childAboutHomeJson {
         title
         subtitle
-        cta
+        cta,
+        linkInnovation
       }
     }
     goalsHome: file(name: { eq: $locale }, relativeDirectory: { eq: "goalsHome" }) {

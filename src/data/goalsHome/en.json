@@ -1,14 +1,12 @@
 {
-    "titleSection": "GLI OBIETTIVI SPECIFICI DI VITTINOVA",
-    "subtitleSection": "Lorem ipsum doloret sin amet.",
-    "title1": "Sostenibilità della filiera vitivinicola",
-    "subtitle1": "Le malattie delle piante sono controllate in agricoltura convenzionale anche grazie a fungicidi di sintesi, vietati in agricoltura biologica, dove zolfo e rame sono tra i pochi principi attivi consentiti. Questo, però, è un metallo pesante, con effetti tossici per la flora microbica e per la coltura.",
-    "title2": "Abbattere l’impiego di rame nei vigneti biologici",
-    "subtitle2": "Sostituendolo con prodotti alternativi di efficacia dimostrata, che necessitano di una messa a punto all’interno di specifiche condizioni aziendali e colturali.",
-    "title3": "Mitigare gli effetti dei cambiamenti climatici",
-    "subtitle3": "Verranno monitorati lo sviluppo vegetativo, l’equilibrio vegeto-produttivo ed il decorso della maturazione delle uve, così da modulare gli interventi agronomici anche attraverso le tecniche di “precision farming”",
-    "title4": "Produzione di vino biologico a basso tenore o in assenza di solfiti",
-    "subtitle4": "Il progetto si propone di innovare le strategie di protezione antiperonosporica delle viti in biologico attraverso l’uso di sostanze alternative al rame, quali il chitosano.",
-    "title5": "Migliorare la qualità e la sicurezza del prodotto finito, per una dieta sana ed equilibrata",
-    "subtitle5": "Così da ottenere la produzione di vini con un uso ridotto o assente del pericoloso metallo pesante, che è noto accumularsi nei terreni vitati e il cui apporto è soggetto a restrizioni, con limiti di utilizzo destinati a ridursi ulteriormente."
+    "titleSection": "THE SPECIFIC OBJECTIVES OF VITTINOVA",
+    "subtitleSection": "",
+    "title1": "Sustainability of the wine industry",
+    "subtitle1": "To limit or cancel the use of copper in organic viticulture using alternative products to prevent mold (such as chitosan) to obtain quality grapes.",
+    "title2": "To reduce the use of copper in organic vineyards",
+    "subtitle2": "To optimize cultivation (defoliation, harvesting) and the use of agrochemicals and fertilizers with smart viticulture and precision farming techniques (such as rate-variable fertilization and selective harvesting).",
+    "title4": "Production of organic wine with a low content or absence of sulphites",
+    "subtitle4": "To apply new cultivation techniques for adaptation to the changed climate context on the basis of early monitoring of the progress of ripening.",
+    "title5": "To improve the quality and safety of the finished product for a healthy and balanced diet",
+    "subtitle5": "Development of winemaking techniques of organic grapes to obtain wines with low content or absence of sulphites and hydrogen sulphide by the use of cryogenic gases (liquid nitrogen and/or CO2), ozone and two “starters” belonging to the species Saccharomyces cerevisiae capable of producing very small quantities of hydrogen sulphide and having higher aromatic profiles."
 }

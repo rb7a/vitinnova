@@ -68,6 +68,6 @@ module.exports = [
   },
   {
     path: '/policy',
-    component: path.resolve("src/pages/privacyPolicy.js")
+    component: path.resolve('src/pages/privacyPolicy.js')
   }
 ]

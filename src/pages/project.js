@@ -6,7 +6,12 @@ import Layout from '../components/layout'
 const Project = ({ pageContext: { locale }, data }) => {
   const { title1, title2, subtitle, titleP1, p1, p2, p3, titleP2, p4, p5, p6, action1, action2, action3, action4, action5, action6, action7 } = data.project.childProjectJson
   return (
-    <Layout path='/' locale={locale} data={data} titleFooter={data.footer.childFooterJson.title} subtitleFooter={data.footer.childFooterJson.subtitle}>
+    <Layout
+      path='/' locale={locale} data={data}
+      titleFooter={data.footer.childFooterJson.title}
+      subtitleFooter={data.footer.childFooterJson.subtitle}
+      dataHeader={data.header.childHeaderJson}
+    >
       <Seo title='Il progetto' />
       <section className='container' style={{ padding: '0 4%', marginBottom: '180px' }}>
         <div style={{ textAlign: 'center', marginTop: '120px', marginBottom: '180px' }}>
@@ -19,7 +24,7 @@ const Project = ({ pageContext: { locale }, data }) => {
           <h2 style={{ marginTop: '80px' }}>{titleP2}</h2>
           <p>{p4}<br /><br />
             {p5}
-            <br /><br /> 
+            <br /><br />
             {p6}
 
             <br /> <br />{action1}
@@ -38,6 +43,13 @@ const Project = ({ pageContext: { locale }, data }) => {
 
 export const query = graphql`
   query Project($locale: String) {
+    header: file(name: { eq: $locale }, relativeDirectory: { eq: "header" }) {
+      childHeaderJson {
+        innovation
+        project
+        contact
+      }
+    }
     footer: file(name: { eq: $locale }, relativeDirectory: { eq: "footer" }) {
       childFooterJson {
         title

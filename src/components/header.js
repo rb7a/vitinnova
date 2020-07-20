@@ -1,95 +1,96 @@
-import React from "react"
-// import { Link } from "gatsby"
-import LocalizedLink from "./LocalizedLink"
-import "./header.css"
+import React, { useState } from 'react'
+import { Link } from 'gatsby'
+import LocalizedLink from './LocalizedLink'
 import fbIcon from '../images/facebook-icon.png'
+import italyFlag from '../images/italy-flag.png'
+import ukFlag from '../images/uk-flag.png'
+import './header.css'
 
-class Header extends React.Component {
-  state = {
-    visible: false,
-  }
+function Header ({ locale, dataHeader }) {
+  const { innovation, project, contact } = dataHeader
 
-  showMobileMenu = () => {
-    this.setState(prevState => {
-      return { visible: !prevState.visible }
-    })
-  }
+  const [visible, setVisible] = useState(false)
 
-  render() {
-    return (
-      <header>
-        <section className="mobile-nav">
-         
-            <a href="https://www.facebook.com/vitinnovavitinnova/" target='_blank'><img src={fbIcon} alt=''/></a>
-          
-       
-          {this.state.visible ? (
-            <div onClick={this.showMobileMenu} className="burger-icon-close">
-              <span>X</span>
-            </div>
-          ) : (
-            <div onClick={this.showMobileMenu} className="burger-icon-open">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          )}
-        </section>
+  const showMobileMenu = () => setVisible(!visible)
 
-        {this.state.visible ? (
-          <nav className="mobile-menu">
-            <ul>
-              <li>
-                <LocalizedLink to="/">Home</LocalizedLink>
-              </li>
-              <li>
-                <LocalizedLink to="/innovazione">Innovazione</LocalizedLink>
-              </li>
-              <li>
-                <LocalizedLink to="/il-progetto">Il progetto</LocalizedLink>
-              </li>
-             
-              <li>
-                <LocalizedLink to="/team">Team</LocalizedLink>
-              </li>
-
-              <li>
-              <LocalizedLink to="/contatti">Contatti</LocalizedLink>
-            </li>
-             
-            </ul>
-          </nav>
+  return (
+    <header>
+      <section className='mobile-nav'>
+        <a href='https://www.facebook.com/vitinnovavitinnova/' target='_blank'><img src={fbIcon} alt='' /></a>
+        {visible ? (
+          <div onClick={showMobileMenu} className='burger-icon-close'>
+            <span>X</span>
+          </div>
         ) : (
-          <p></p>
+          <div onClick={showMobileMenu} className='burger-icon-open'>
+            <span />
+            <span />
+            <span />
+          </div>
         )}
+      </section>
 
-        <nav className="desktop-menu">
+      {visible ? (
+        <nav className='mobile-menu'>
           <ul>
             <li>
-              <LocalizedLink to="/">Home</LocalizedLink>
+              <LocalizedLink to='/'>Home</LocalizedLink>
             </li>
             <li>
-              <LocalizedLink to="/innovazione">Innovazione</LocalizedLink>
+              <LocalizedLink to='/innovazione'>{innovation}</LocalizedLink>
             </li>
             <li>
-              <LocalizedLink to="/il-progetto">Il progetto</LocalizedLink>
-            </li>
-          
-            <li>
-              <LocalizedLink to="/team">Team</LocalizedLink>
+              <LocalizedLink to='/il-progetto'>{project}</LocalizedLink>
             </li>
 
             <li>
-              <LocalizedLink to="/contatti">Contatti</LocalizedLink>
+              <LocalizedLink to='/team'>Team</LocalizedLink>
             </li>
-          
-           
+
+            <li>
+              <LocalizedLink to='/contatti'>{contact}</LocalizedLink>
+            </li>
+            <li>
+              {locale == 'it'
+                ? <Link to='/en'><img src={ukFlag} /></Link> : <Link to='/'><img src={italyFlag} /></Link>}
+            </li>
+
           </ul>
-          <a href="https://www.facebook.com/vitinnovavitinnova/" target='_blank'><img src={fbIcon} style={{position: 'relative', top: '5px'}} alt=''/></a>
         </nav>
-      </header>
-    )
-  }
+      ) : (
+        <p />
+      )}
+
+      <nav className='desktop-menu'>
+        <ul>
+          <li>
+            <LocalizedLink to='/'>Home</LocalizedLink>
+          </li>
+          <li>
+            <LocalizedLink to='/innovazione'>{innovation}</LocalizedLink>
+          </li>
+          <li>
+            <LocalizedLink to='/il-progetto'>{project}</LocalizedLink>
+          </li>
+
+          <li>
+            <LocalizedLink to='/team'>Team</LocalizedLink>
+          </li>
+
+          <li>
+            <LocalizedLink to='/contatti'>{contact}</LocalizedLink>
+          </li>
+          <li>
+            {locale == 'it'
+              ? <Link to='/en'><img style={{ position: 'relative', bottom: '8px' }} src={ukFlag} /></Link> : <Link to='/'><img style={{ position: 'relative', bottom: '8px' }} src={italyFlag} /></Link>}
+          </li>
+        </ul>
+        <div style={{ position: 'relative', top: '5px' }}>
+          <a href='https://www.facebook.com/vitinnovavitinnova/' target='_blank'><img src={fbIcon} alt='facebook-icon' /></a>
+        </div>
+      </nav>
+    </header>
+  )
 }
 
 export default Header
