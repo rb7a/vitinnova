@@ -7,7 +7,7 @@ import ukFlag from '../images/uk-flag.png'
 import './header.css'
 
 function Header ({ locale, dataHeader }) {
-  // const { innovation, project, contact } = dataHeader
+  const { innovation, project, contact } = dataHeader
 
   const [visible, setVisible] = useState(false)
 
@@ -38,10 +38,10 @@ function Header ({ locale, dataHeader }) {
               <LocalizedLink to='/'>Home</LocalizedLink>
             </li>
             <li>
-              <LocalizedLink to='/innovazione'>Innovazione</LocalizedLink>
+              <LocalizedLink to='/innovazione'>{innovation}</LocalizedLink>
             </li>
             <li>
-              <LocalizedLink to='/il-progetto'>Il progetto</LocalizedLink>
+              <LocalizedLink to='/il-progetto'>{project}</LocalizedLink>
             </li>
 
             <li>
@@ -49,12 +49,12 @@ function Header ({ locale, dataHeader }) {
             </li>
 
             <li>
-              <LocalizedLink to='/contatti'>Contatti</LocalizedLink>
+              <LocalizedLink to='/contatti'>{contact}</LocalizedLink>
             </li>
-            {/* <li>
+            <li>
               {locale == 'it'
                 ? <Link to='/en'><img src={ukFlag} /></Link> : <Link to='/'><img src={italyFlag} /></Link>}
-            </li> */}
+            </li>
 
           </ul>
         </nav>
@@ -68,10 +68,10 @@ function Header ({ locale, dataHeader }) {
             <LocalizedLink to='/'>Home</LocalizedLink>
           </li>
           <li>
-            <LocalizedLink to='/innovazione'>Innovazione</LocalizedLink>
+            <LocalizedLink to='/innovazione'>{innovation}</LocalizedLink>
           </li>
           <li>
-            <LocalizedLink to='/il-progetto'>Il progetto</LocalizedLink>
+            <LocalizedLink to='/il-progetto'>{project}</LocalizedLink>
           </li>
 
           <li>
@@ -79,12 +79,12 @@ function Header ({ locale, dataHeader }) {
           </li>
 
           <li>
-            <LocalizedLink to='/contatti'>Contatti</LocalizedLink>
+            <LocalizedLink to='/contatti'>{contact}</LocalizedLink>
           </li>
-          {/* <li>
+          <li>
             {locale == 'it'
               ? <Link to='/en'><img style={{ position: 'relative', bottom: '8px' }} src={ukFlag} /></Link> : <Link to='/'><img style={{ position: 'relative', bottom: '8px' }} src={italyFlag} /></Link>}
-          </li> */}
+          </li>
         </ul>
         <div style={{ position: 'relative', top: '5px' }}>
           <a href='https://www.facebook.com/vitinnovavitinnova/' target='_blank'><img src={fbIcon} alt='facebook-icon' /></a>

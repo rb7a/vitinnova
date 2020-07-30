@@ -6,7 +6,6 @@ import Seo from '../components/seo'
 import Hero from '../components/hero'
 import AboutHome from '../components/aboutHome'
 import GoalsHome from '../components/goalsHome'
-import volantino from '../images/volantino.jpg'
 
 const IndexPage = ({ pageContext: { locale }, data }) => {
   return (
@@ -23,10 +22,6 @@ const IndexPage = ({ pageContext: { locale }, data }) => {
           subtitle={data.hero.childHeroJson.subtitle}
           cta={data.hero.childHeroJson.cta}
           linkCta={data.hero.childHeroJson.linkCta}
-        />
-
-        <img
-          src={volantino} className='volantino'
         />
 
         <AboutHome
