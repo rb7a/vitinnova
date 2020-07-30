@@ -7,7 +7,15 @@ import ukFlag from '../images/uk-flag.png'
 import './header.css'
 
 function Header ({ locale, dataHeader }) {
-  const { innovation, project, contact } = dataHeader
+  let innovation
+  let project
+  let contact
+
+  if (dataHeader) {
+    innovation = dataHeader.innovation
+    project = dataHeader.project
+    contact = dataHeader.contact
+  }
 
   const [visible, setVisible] = useState(false)
 
