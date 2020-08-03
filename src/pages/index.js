@@ -23,10 +23,14 @@ const IndexPage = ({ pageContext: { locale }, data }) => {
           cta={data.hero.childHeroJson.cta}
           linkCta={data.hero.childHeroJson.linkCta}
         />
-        <iframe
+        {/* <iframe
           style={{ margin: '0 auto', display: 'block', position: 'relative', bottom: '80px' }}
-          width='100%' height='500px' src='https://www.youtube.com/embed/czgTTyfCMQ8' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen
-        />
+          width='100%' height='500px' src='https://www.youtube.com/watch?v=CGcu8QSVlgg&t=57s' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen
+        /> */}
+        <iframe 
+        style={{ margin: '0 auto', display: 'block', position: 'relative', bottom: '80px' }}
+        width='100%' height='500px' src="https://www.youtube.com/embed/CGcu8QSVlgg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
         <AboutHome
           title={data.aboutHome.childAboutHomeJson.title}
