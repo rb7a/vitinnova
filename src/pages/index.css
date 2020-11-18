@@ -1,8 +1,29 @@
-.volantino {
+/* .volantino {
     position: relative;
     bottom: 48px;
     max-width: 90%;
     display: block;
     margin: 0 auto;
     padding-bottom: 40px
+} */
+
+#gallery-video {
+    margin-top: 60px;
+    width: 100%;
 }
+#gallery-video iframe {
+    margin: 30px auto;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media(min-width: 968px){
+    #gallery-video {
+        margin-top: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
