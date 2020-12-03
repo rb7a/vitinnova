@@ -23,6 +23,7 @@ const IndexPage = ({ pageContext: { locale }, data }) => {
           cta={data.hero.childHeroJson.cta}
           linkCta={data.hero.childHeroJson.linkCta}
         />
+       
         <div id='gallery-video'>
           <iframe
             src='https://www.youtube.com/embed/CGcu8QSVlgg' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen
