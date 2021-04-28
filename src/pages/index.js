@@ -23,7 +23,19 @@ const IndexPage = ({ pageContext: { locale }, data }) => {
           cta={data.hero.childHeroJson.cta}
           linkCta={data.hero.childHeroJson.linkCta}
         />
-       
+
+        <div
+          id='invito' style={{
+            textAlign: 'center',
+            marginBottom: '80px'
+          }}
+        >
+          <h2>VITINNOVA vendemmia 2020:VALUTAZIONI CO(u)LTURALI & VALUTAZIONI SENSORIALI</h2>
+          <a
+            href='/invito-vitinnova-2021.pdf' target='_blank'
+          >> Scopri di più
+          </a>
+        </div>
         <div id='gallery-video'>
           <iframe
             src='https://www.youtube.com/embed/CGcu8QSVlgg' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen
@@ -54,8 +66,9 @@ const IndexPage = ({ pageContext: { locale }, data }) => {
           title5={data.goalsHome.childGoalsHomeJson.title5}
           subtitle5={data.goalsHome.childGoalsHomeJson.subtitle5}
         />
+        {/* <img src={invito} /> */}
 
-        <iframe className='shadow' style={{ marginTop: '120px' }} width='100%' height='500px' src='https://www.youtube.com/embed/zTJ3TuRWhLA' frameBorder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowFullScreen />
+        {/* <iframe className='shadow' style={{ marginTop: '120px' }} width='100%' height='500px' src='https://www.youtube.com/embed/zTJ3TuRWhLA' frameBorder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowFullScreen /> */}
       </section>
     </Layout>
   )
